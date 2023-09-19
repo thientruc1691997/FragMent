@@ -3,16 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
-    <fragment
+
+    <!-- Fragment container for MenuFrag -->
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/MenuFrag"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
-    <fragment
+    <!-- Fragment container for ContentFrag -->
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/ContentFrag"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="3"/>
-
+        android:layout_weight="3" />
 </LinearLayout>
